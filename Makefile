@@ -28,8 +28,7 @@ carthage:
 	./carthage.sh build --no-skip-current;
 
 webp:
-	carthage update --no-use-binaries --no-build
-	cd webp && ../Carthage/Checkouts/libwebp/iosbuild.sh
+	carthage update libwebp-Xcode --use-xcframeworks --cache-builds
 
 spm:
 	swift build
